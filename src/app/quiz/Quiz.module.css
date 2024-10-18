@@ -1,0 +1,151 @@
+.container {
+  max-width: 600px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+.app_quiz{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #744dff;
+}
+.main_body{
+  width: 100%;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+  background-color: #fff;
+}
+.optionsList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.optionButton {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #F3F4FA;
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+}
+
+.time_indicator{
+  width: 100%;
+  height: 10px;
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.time_indicator_bar{
+  height: 100%;
+  background-color: #4CAF50;
+  transition: width 1.1s;
+}
+.container_header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.final_score{
+  font-size: 30px !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #000;
+}
+.optionButton:hover:not(:disabled) {
+  background-color: #e0e0e0;
+}
+
+.circularProgress {
+
+}
+
+.circularProgressTrack {
+  stroke: #f0f0f0;
+}
+
+.circularProgressIndicator {
+  stroke: #4CAF50;
+}
+
+.circularProgressValue {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #000;
+  width: 100%;
+  text-align: center;
+}
+.main_bg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../../assets/quiz_bg.svg");
+}
+
+.circularProgressLabel {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #000;
+  width: 100%;
+  text-align: center;
+}
+
+.optionButton.selected {
+  background-color: #4CAF50;
+  color: white;
+}
+.container h2{
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #a3a3a3;
+}
+.container p{
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #000;
+}
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  position: absolute;
+  bottom: 0rem;
+}
+
+.nextButton {
+  padding: 20px;
+  width: 100%;
+  background-color: #ff3b3f;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.nextButton:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
