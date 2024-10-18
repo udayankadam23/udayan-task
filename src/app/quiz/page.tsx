@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from './Quiz.module.css';
 import toast, { Toaster } from 'react-hot-toast';
-import { CircularProgress } from '@nextui-org/react';
 interface Question {
   id: number;
   text: string;
